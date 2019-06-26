@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# User
+tim = User.find_or_create_by(username: "tim", password: "tim")
+
+# Trip
+summer = Trip.find_or_create_by(title: "Summer Vacation", start: "2019, 8, 10", end: "2019, 8, 20", user_id: 1 )
+winter = Trip.find_or_create_by(title: "Winter Vacation", start: "2019, 12, 10", end: "2019, 12, 20", user_id: 1 )
+
+# Day
+day1 = Day.find_or_create_by(trip_id: 1)
+day2 = Day.find_or_create_by(trip_id: 1)
+day3 = Day.find_or_create_by(trip_id: 1)
+
+# Item
+tower = Item.find_or_create_by(place: "Eiffel Tower", memo: "it is a famous landmark of the city", day_id: 1)
+museum = Item.find_or_create_by(place: "Louvre Museum", memo: "it is a famous museum of the city", day_id: 1)
+shopping = Item.find_or_create_by(place: "Champs-Élysées", memo: "it is a famous shopping street of the city", day_id: 2)
+
+puts "Seeding Completed"

@@ -4377,3 +4377,115 @@ Processing by UsersController#profile as */*
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (223.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (204.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (457.6ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (325.4ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (180.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (192.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (390.5ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (369.3ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2322694216991824725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190624153253)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190624153253_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190624153253"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTrips (20190626140412)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "title" character varying, "start" date, "end" date, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_6a33c9e4ea"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190626140412_create_trips.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_trips_on_user_id" ON "trips"  ("user_id")[0m
+  ↳ db/migrate/20190626140412_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626140412"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateDays (20190626140522)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "days" ("id" bigserial primary key, "trip_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_4123515a3d"
+FOREIGN KEY ("trip_id")
+  REFERENCES "trips" ("id")
+)[0m
+  ↳ db/migrate/20190626140522_create_days.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_days_on_trip_id" ON "days"  ("trip_id")[0m
+  ↳ db/migrate/20190626140522_create_days.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626140522"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20190626141206)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "place" character varying, "memo" character varying, "day_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_70d5336621"
+FOREIGN KEY ("day_id")
+  REFERENCES "days" ("id")
+)[0m
+  ↳ db/migrate/20190626141206_create_items.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_items_on_day_id" ON "items"  ("day_id")[0m
+  ↳ db/migrate/20190626141206_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626141206"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-26 14:17:22.290516"], ["updated_at", "2019-06-26 14:17:22.290516"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2322694216991824725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
