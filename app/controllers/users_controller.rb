@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def create
+    # byebug
     # params: { username: '', password: '' }
     user = User.create(user_params)
 
@@ -26,5 +27,6 @@ end
 
   def user_params
     params.permit(:username, :password)
+    # byebug
   end
 end

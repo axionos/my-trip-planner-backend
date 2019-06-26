@@ -5746,3 +5746,553 @@ FOREIGN KEY ("user_id")
   [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."user_id" = $1 ORDER BY "trips"."id" ASC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
   [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT  "days".* FROM "days" WHERE "days"."trip_id" = $1 ORDER BY "days"."id" DESC LIMIT $2[0m  [["trip_id", 1], ["LIMIT", 1]]
   [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."day_id" = $1 LIMIT $2[0m  [["day_id", 3], ["LIMIT", 11]]
+Started GET "/profile" for ::1 at 2019-06-26 11:06:45 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 404 Not Found in 21ms (ActiveRecord: 12.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
+  
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+Started GET "/profile" for ::1 at 2019-06-26 11:06:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
+  
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+Started GET "/profile" for ::1 at 2019-06-26 11:06:56 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+Started POST "/login" for ::1 at 2019-06-26 11:07:00 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"tim", "password"=>"[FILTERED]", "auth"=>{"username"=>"tim", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/signup" for ::1 at 2019-06-26 11:07:14 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"tim", "password"=>"[FILTERED]", "user"=>{"username"=>"tim"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "tim"], ["password_digest", "$2a$12$ADPtJ7kJAIb8WXHs0.DZaORL65lCxHi8lS1pGld7.sQaKXjApayFK"], ["created_at", "2019-06-26 15:07:14.553779"], ["updated_at", "2019-06-26 15:07:14.553779"]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 194ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for ::1 at 2019-06-26 11:07:21 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"tim", "password"=>"[FILTERED]", "auth"=>{"username"=>"tim", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/signup" for ::1 at 2019-06-26 11:07:37 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "user"=>{"username"=>"al"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "al"], ["password_digest", "$2a$12$Iq4ZysHCQ1jXGjst5MG98.i83AYfbiB8J5qSTotGhyE3saUZBXotW"], ["created_at", "2019-06-26 15:07:38.174191"], ["updated_at", "2019-06-26 15:07:38.174191"]]
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 191ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-26 11:07:41 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 200 OK in 189ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:07:41 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:07:41 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:08:15 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+Started POST "/login" for ::1 at 2019-06-26 11:08:18 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 200 OK in 192ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:08:18 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:08:18 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:08:23 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/signup" for ::1 at 2019-06-26 11:13:00 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "user"=>{"username"=>"al"}}
+Unpermitted parameter: :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 4.8ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faacfa38438>):
+  
+app/controllers/users_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/login" for ::1 at 2019-06-26 11:13:35 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 200 OK in 195ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:13:36 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:13:36 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:13:38 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:21:in `profile'
+Started POST "/signup" for ::1 at 2019-06-26 11:13:43 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "user"=>{"username"=>"al"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faad2289018>):
+  
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/signup" for ::1 at 2019-06-26 11:13:55 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"b", "password"=>"[FILTERED]", "user"=>{"username"=>"b"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faad216b988>):
+  
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/login" for ::1 at 2019-06-26 11:13:59 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"b", "password"=>"[FILTERED]", "auth"=>{"username"=>"b", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "b"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/login" for ::1 at 2019-06-26 11:14:00 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"b", "password"=>"[FILTERED]", "auth"=>{"username"=>"b", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "b"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/signup" for ::1 at 2019-06-26 11:14:24 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"b", "password"=>"[FILTERED]", "user"=>{"username"=>"b"}}
+Unpermitted parameter: :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faad313b048>):
+  
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/login" for ::1 at 2019-06-26 11:14:27 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"b", "password"=>"[FILTERED]", "auth"=>{"username"=>"b", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "b"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/login" for ::1 at 2019-06-26 11:14:44 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"bb", "password"=>"[FILTERED]", "auth"=>{"username"=>"bb", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bb"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/signup" for ::1 at 2019-06-26 11:14:51 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"bb", "password"=>"[FILTERED]", "user"=>{"username"=>"bb"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faad20faeb8>):
+  
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/login" for ::1 at 2019-06-26 11:14:55 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"bb", "password"=>"[FILTERED]", "auth"=>{"username"=>"bb", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bb"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/signup" for ::1 at 2019-06-26 11:15:28 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Unpermitted parameter: :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `name' for #<User:0x00007faad220aa10>):
+  
+app/controllers/users_controller.rb:4:in `create'
+Started POST "/signup" for ::1 at 2019-06-26 11:16:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Completed 500 Internal Server Error in 59542ms (ActiveRecord: 2.3ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-06-26 11:17:30 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 4.7ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:5:in `create'
+Started POST "/login" for ::1 at 2019-06-26 11:17:38 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "auth"=>{"username"=>"dan", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:9:in `login'
+Started POST "/signup" for ::1 at 2019-06-26 11:18:09 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Unpermitted parameter: :user
+Started POST "/signup" for ::1 at 2019-06-26 11:18:25 -0400
+Completed 500 Internal Server Error in 91648ms (ActiveRecord: 2.2ms)
+
+
+Started POST "/signup" for ::1 at 2019-06-26 11:19:41 -0400
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `user_params'
+app/controllers/users_controller.rb:31:in `user_params'
+app/controllers/users_controller.rb:5:in `create'
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Completed 500 Internal Server Error in 21644ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+Completed 500 Internal Server Error in 1348ms (ActiveRecord: 0.0ms)
+
+
+  
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:5:in `create'
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:5:in `create'
+Started POST "/signup" for ::1 at 2019-06-26 11:20:36 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Unpermitted parameter: :user
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "dan"], ["password_digest", "$2a$12$VNBsmjxUfW/b.yRNm396iuSGEy6XQ46BrDIJ7Q7U9i2XenDguru7q"], ["created_at", "2019-06-26 15:20:37.452863"], ["updated_at", "2019-06-26 15:20:37.452863"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 283ms (Views: 1.3ms | ActiveRecord: 23.8ms)
+
+
+Started POST "/login" for ::1 at 2019-06-26 11:20:47 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "auth"=>{"username"=>"dan", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 200 OK in 220ms (Views: 3.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:20:47 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 34ms (Views: 6.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:20:48 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 23ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:20:50 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:22:in `profile'
+Started POST "/signup" for ::1 at 2019-06-26 11:21:14 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"dan", "password"=>"[FILTERED]", "user"=>{"username"=>"dan"}}
+Unpermitted parameter: :user
+  [1m[35m (5.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (3.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dan"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 15.9ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/signup" for ::1 at 2019-06-26 11:21:36 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"v", "password"=>"[FILTERED]", "user"=>{"username"=>"v"}}
+Unpermitted parameter: :user
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "v"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "v"], ["password_digest", "$2a$12$xe539mlG0/WB8sKh9n6ef.jKmnwibKNud4I..afv0lrxb9.NSyeCu"], ["created_at", "2019-06-26 15:21:36.912740"], ["updated_at", "2019-06-26 15:21:36.912740"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "v"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 200 OK in 275ms (Views: 1.2ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/login" for ::1 at 2019-06-26 11:21:44 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"v", "password"=>"[FILTERED]", "auth"=>{"username"=>"v", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "v"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:6
+Completed 200 OK in 210ms (Views: 3.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:21:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 39ms (Views: 12.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:21:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 32ms (Views: 6.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-26 11:21:47 -0400
+Processing by UsersController#profile as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/users_controller.rb:22:in `profile'
+Started POST "/signup" for ::1 at 2019-06-26 11:21:52 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"v", "password"=>"[FILTERED]", "user"=>{"username"=>"v"}}
+Unpermitted parameter: :user
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "v"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "v"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 2.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
