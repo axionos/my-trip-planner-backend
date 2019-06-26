@@ -10,35 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_26_141206) do
+ActiveRecord::Schema.define(version: 2019_06_26_192305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "days", force: :cascade do |t|
-    t.bigint "trip_id"
+    t.integer "trip_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["trip_id"], name: "index_days_on_trip_id"
   end
 
   create_table "items", force: :cascade do |t|
     t.string "place"
     t.string "memo"
-    t.bigint "day_id"
+    t.integer "day_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["day_id"], name: "index_items_on_day_id"
   end
 
   create_table "trips", force: :cascade do |t|
     t.string "title"
     t.date "start"
     t.date "end"
-    t.bigint "user_id"
+    t.string "country"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_trips_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,7 +46,4 @@ ActiveRecord::Schema.define(version: 2019_06_26_141206) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "days", "trips"
-  add_foreign_key "items", "days"
-  add_foreign_key "trips", "users"
 end

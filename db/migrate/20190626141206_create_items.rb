@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :place
       t.string :memo
       t.integer :day_id
-      t.belongs_to :day, foreign_key: true
+      # t.belongs_to :day, foreign_key: true
 
       t.timestamps
     end
