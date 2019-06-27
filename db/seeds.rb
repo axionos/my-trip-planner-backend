@@ -12,8 +12,8 @@ tim = User.find_or_create_by(username: "tim", password_digest: "tim")
 
 # Trip
 # Trip.all # User.all.first.trips
-summer = Trip.find_or_create_by(title: "Summer Vacation", start: "8-10-2019", end: "8-20-2019", destination: "France", user_id: 2 )
-winter = Trip.find_or_create_by(title: "Winter Vacation", start: "12-10-2019", end: "12-20-2019", destination: "Japan", user_id: 2 )
+summer = Trip.find_or_create_by(title: "Summer Vacation", startDate: "2019-8-10", endDate: "2019-8-20", destination: "France", user_id: 2 )
+winter = Trip.find_or_create_by(title: "Winter Vacation", startDate: "2019-12-10", endDate: "2019-12-20", destination: "Japan", user_id: 2 )
 
 # Day
 # Day.all # User.all.first.trips.first.days
