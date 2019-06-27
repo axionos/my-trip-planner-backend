@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_06_26_192305) do
     t.string "title"
     t.date "start"
     t.date "end"
-    t.string "country"
+    t.string "destination"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

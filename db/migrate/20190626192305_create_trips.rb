@@ -4,7 +4,7 @@ class CreateTrips < ActiveRecord::Migration[5.2]
       t.string :title
       t.date :start
       t.date :end
-      t.string :country
+      t.string :destination
       # t.integer :user_id
       t.integer :user_id
 
