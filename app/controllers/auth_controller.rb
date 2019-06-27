@@ -1,4 +1,6 @@
 class AuthController < ApplicationController
+  # skip_before_action :authorized, only: [:create]
+
   def login
     # params: { username: '', password: '' }
 
@@ -9,7 +11,7 @@ class AuthController < ApplicationController
     is_authenticated = user.authenticate(params["password"])
 
     # "log in the user"
-    if is_authenticated  
+    if is_authenticated
       render json: { token: encode_token(user) }
     else
       render json: { error: "Wrong username or password" }

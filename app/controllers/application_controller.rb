@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::API
 
+  # before_action :authorized
+
   def user_payload(user)
     { user_id: user.id }
   end
@@ -23,4 +25,12 @@ class ApplicationController < ActionController::API
   def current_user
     user = User.find(decoded_token[0]["user_id"])
   end
+
+  # def logged_in?
+  #   !!current_user
+  # end
+  #
+  # def authorized
+  #   render json: { message: "Please log in" }, status: :unauthorized unless logged_in?
+  # end
 end

@@ -14590,3 +14590,1526 @@ Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.8ms)
 Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.9ms)
 
 
+Started POST "/add_trip" for ::1 at 2019-06-27 14:49:43 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"test1", "startDate"=>"2019-06-26T18:49:27.000Z", "endDate"=>"2019-06-29T18:49:27.000Z", "destination"=>"Anguilla", "trip"=>{"title"=>"test1", "startDate"=>"2019-06-26T18:49:27.000Z", "endDate"=>"2019-06-29T18:49:27.000Z", "destination"=>"Anguilla"}}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 5.3ms)
+
+
+  
+NameError (undefined local variable or method `param' for #<TripsController:0x00007fe159b77658>
+Did you mean?  params
+               params=):
+  
+app/controllers/trips_controller.rb:18:in `trips_param'
+app/controllers/trips_controller.rb:11:in `create'
+Started GET "/profile" for ::1 at 2019-06-27 14:51:05 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/add_trip" for ::1 at 2019-06-27 14:51:10 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"abc", "startDate"=>"2019-06-27T18:51:05.798Z", "endDate"=>"2019-06-27T18:51:05.798Z", "destination"=>"Albania", "trip"=>{"title"=>"abc", "startDate"=>"2019-06-27T18:51:05.798Z", "endDate"=>"2019-06-27T18:51:05.798Z", "destination"=>"Albania"}}
+Unpermitted parameter: :trip
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 11ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 14:51:43 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/add_trip" for ::1 at 2019-06-27 14:51:52 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"aaa", "startDate"=>"2019-06-27T18:51:43.584Z", "endDate"=>"2019-06-27T18:51:43.584Z", "destination"=>"Belgium", "trip"=>{"title"=>"aaa", "startDate"=>"2019-06-27T18:51:43.584Z", "endDate"=>"2019-06-27T18:51:43.584Z", "destination"=>"Belgium"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 14:54:59 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 37ms (Views: 0.4ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/create" for ::1 at 2019-06-27 14:55:08 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"abbbb", "startDate"=>"2019-06-27T18:54:59.276Z", "endDate"=>"2019-06-27T18:54:59.276Z", "destination"=>"Bangladesh", "trip"=>{"title"=>"abbbb", "startDate"=>"2019-06-27T18:54:59.276Z", "endDate"=>"2019-06-27T18:54:59.276Z", "destination"=>"Bangladesh"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 9ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 14:55:46 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 14:55:54 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"aaa", "startDate"=>"2019-06-27T18:55:46.593Z", "endDate"=>"2019-06-27T18:55:46.593Z", "destination"=>"Angola", "trip"=>{"title"=>"aaa", "startDate"=>"2019-06-27T18:55:46.593Z", "endDate"=>"2019-06-27T18:55:46.593Z", "destination"=>"Angola"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 10ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 15:00:42 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 15:00:49 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (4.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:00:49 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:00:55 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"kl", "startDate"=>"2019-06-27T19:00:51.031Z", "endDate"=>"2019-06-27T19:00:51.031Z", "destination"=>"Albania", "trip"=>{"title"=>"kl", "startDate"=>"2019-06-27T19:00:51.031Z", "endDate"=>"2019-06-27T19:00:51.031Z", "destination"=>"Albania"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/new_trip" for ::1 at 2019-06-27 15:02:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/new_trip"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/new_trip" for ::1 at 2019-06-27 15:02:52 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/new_trip"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2019-06-27 15:02:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2019-06-27 15:03:00 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:03:24 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"mjj", "startDate"=>"2019-06-27T19:03:00.240Z", "endDate"=>"2019-06-27T19:03:00.240Z", "destination"=>"Albania", "trip"=>{"title"=>"mjj", "startDate"=>"2019-06-27T19:03:00.240Z", "endDate"=>"2019-06-27T19:03:00.240Z", "destination"=>"Albania"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 11ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:03:37 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:04:54 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"sd", "startDate"=>"2019-06-27T19:03:37.347Z", "endDate"=>"2019-06-27T19:03:37.347Z", "destination"=>"Afghanistan", "trip"=>{"title"=>"sd", "startDate"=>"2019-06-27T19:03:37.347Z", "endDate"=>"2019-06-27T19:03:37.347Z", "destination"=>"Afghanistan"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:05:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:05:56 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"miami", "startDate"=>"2019-06-27T19:05:45.463Z", "endDate"=>"2019-06-27T19:05:45.463Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"miami", "startDate"=>"2019-06-27T19:05:45.463Z", "endDate"=>"2019-06-27T19:05:45.463Z", "destination"=>"Åland Islands"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:06:02 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:06:08 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"adasd", "startDate"=>"2019-06-27T19:06:02.577Z", "endDate"=>"2019-06-27T19:06:02.577Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"adasd", "startDate"=>"2019-06-27T19:06:02.577Z", "endDate"=>"2019-06-27T19:06:02.577Z", "destination"=>"Åland Islands"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:06:26 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:06:31 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:06:54 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"dfsdfd", "startDate"=>"2019-06-27T19:06:31.474Z", "endDate"=>"2019-06-27T19:06:31.474Z", "destination"=>"Albania", "trip"=>{"title"=>"dfsdfd", "startDate"=>"2019-06-27T19:06:31.474Z", "endDate"=>"2019-06-27T19:06:31.474Z", "destination"=>"Albania"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:07:37 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"dfsdfd", "startDate"=>"2019-06-27T19:06:31.474Z", "endDate"=>"2019-06-27T19:06:31.474Z", "destination"=>"Albania", "trip"=>{"title"=>"dfsdfd", "startDate"=>"2019-06-27T19:06:31.474Z", "endDate"=>"2019-06-27T19:06:31.474Z", "destination"=>"Albania"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:07:38 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:08:24 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"dddd", "startDate"=>"2019-06-27T19:07:38.121Z", "endDate"=>"2019-06-27T19:07:38.121Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"dddd", "startDate"=>"2019-06-27T19:07:38.121Z", "endDate"=>"2019-06-27T19:07:38.121Z", "destination"=>"Åland Islands"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 5ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:08:25 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:08:36 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"FDDD", "startDate"=>"2019-06-27T19:08:25.255Z", "endDate"=>"2019-06-27T19:08:25.255Z", "destination"=>"Albania", "trip"=>{"title"=>"FDDD", "startDate"=>"2019-06-27T19:08:25.255Z", "endDate"=>"2019-06-27T19:08:25.255Z", "destination"=>"Albania"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:09:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTrip Create (0.7ms)[0m  [1m[32mINSERT INTO "trips" ("title", "startDate", "endDate", "destination", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "abc"], ["startDate", "2019-05-05"], ["endDate", "2019-05-08"], ["destination", "miami"], ["user_id", 2], ["created_at", "2019-06-27 19:14:09.501303"], ["updated_at", "2019-06-27 19:14:09.501303"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/profile" for ::1 at 2019-06-27 15:14:27 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:14:42 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"mng", "startDate"=>"2019-06-27T19:14:27.614Z", "endDate"=>"2019-06-27T19:14:27.614Z", "destination"=>"Algeria", "trip"=>{"title"=>"mng", "startDate"=>"2019-06-27T19:14:27.614Z", "endDate"=>"2019-06-27T19:14:27.614Z", "destination"=>"Algeria"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 24ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:14:59 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:15:05 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"ewe", "startDate"=>"2019-06-27T19:14:59.855Z", "endDate"=>"2019-06-27T19:14:59.855Z", "destination"=>"Afghanistan", "trip"=>{"title"=>"ewe", "startDate"=>"2019-06-27T19:14:59.855Z", "endDate"=>"2019-06-27T19:14:59.855Z", "destination"=>"Afghanistan"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:15:58 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:16:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:16:27 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"blah", "startDate"=>"2019-06-27T19:16:21.540Z", "endDate"=>"2019-06-27T19:16:21.540Z", "destination"=>"Afghanistan", "trip"=>{"title"=>"blah", "startDate"=>"2019-06-27T19:16:21.540Z", "endDate"=>"2019-06-27T19:16:21.540Z", "destination"=>"Afghanistan"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:19:24 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 15:20:02 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 15:21:13 -0400
+Started GET "/profile" for ::1 at 2019-06-27 15:21:13 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:21:36 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"blah", "startDate"=>"2019-06-27T19:21:27.069Z", "endDate"=>"2019-06-27T19:21:27.069Z", "destination"=>"American Samoa", "trip"=>{"title"=>"blah", "startDate"=>"2019-06-27T19:21:27.069Z", "endDate"=>"2019-06-27T19:21:27.069Z", "destination"=>"American Samoa"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:25:56 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:26:04 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"434", "startDate"=>"2019-06-27T19:25:56.401Z", "endDate"=>"2019-06-27T19:25:56.401Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"434", "startDate"=>"2019-06-27T19:25:56.401Z", "endDate"=>"2019-06-27T19:25:56.401Z", "destination"=>"Åland Islands"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:26:10 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:24
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:26:17 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"dsfsdfs", "startDate"=>"2019-06-27T19:26:10.173Z", "endDate"=>"2019-06-27T19:26:10.173Z", "destination"=>"Albania", "trip"=>{"title"=>"dsfsdfs", "startDate"=>"2019-06-27T19:26:10.173Z", "endDate"=>"2019-06-27T19:26:10.173Z", "destination"=>"Albania"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:31:18 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/soyeongoh/Development/project/mod5-trip-organizer/organizer-back-end/app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "Please log in" }, status :unauthorized unless logged_in?
+...                              ^):
+  
+app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/profile" for ::1 at 2019-06-27 15:31:47 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/soyeongoh/Development/project/mod5-trip-organizer/organizer-back-end/app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "Please log in" }, status :unauthorized unless logged_in?
+...                              ^):
+  
+app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/trips" for ::1 at 2019-06-27 15:31:51 -0400
+  
+SyntaxError (/Users/soyeongoh/Development/project/mod5-trip-organizer/organizer-back-end/app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "Please log in" }, status :unauthorized unless logged_in?
+...                              ^):
+  
+app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/trips_controller.rb:1:in `<main>'
+Started GET "/profile" for ::1 at 2019-06-27 15:32:02 -0400
+  
+SyntaxError (/Users/soyeongoh/Development/project/mod5-trip-organizer/organizer-back-end/app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "Please log in" }, status :unauthorized unless logged_in?
+...                              ^):
+  
+app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/new_trip" for ::1 at 2019-06-27 15:32:08 -0400
+  
+SyntaxError (/Users/soyeongoh/Development/project/mod5-trip-organizer/organizer-back-end/app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...ge: "Please log in" }, status :unauthorized unless logged_in?
+...                              ^):
+  
+app/controllers/application_controller.rb:34: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/trips_controller.rb:1:in `<main>'
+Started GET "/profile" for ::1 at 2019-06-27 15:33:41 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:33:46 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"ddddd", "startDate"=>"2019-06-27T19:33:41.049Z", "endDate"=>"2019-06-27T19:33:41.049Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"ddddd", "startDate"=>"2019-06-27T19:33:41.049Z", "endDate"=>"2019-06-27T19:33:41.049Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:34:48 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:36:45 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:36:49 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"ddd", "startDate"=>"2019-06-27T19:36:45.108Z", "endDate"=>"2019-06-27T19:36:45.108Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"ddd", "startDate"=>"2019-06-27T19:36:45.108Z", "endDate"=>"2019-06-27T19:36:45.108Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:37:51 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:37:57 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"dddd", "startDate"=>"2019-06-27T19:37:51.488Z", "endDate"=>"2019-06-27T19:37:51.488Z", "destination"=>"Åland Islands", "trip"=>{"title"=>"dddd", "startDate"=>"2019-06-27T19:37:51.488Z", "endDate"=>"2019-06-27T19:37:51.488Z", "destination"=>"Åland Islands"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 1.7ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:22:in `decoded_token'
+app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:30:in `logged_in?'
+app/controllers/application_controller.rb:34:in `authorized'
+Started GET "/profile" for ::1 at 2019-06-27 15:38:25 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:39:57 -0400
+Processing by TripsController#create as */*
+  Parameters: {"title"=>"eeee", "startDate"=>"2019-06-27T19:38:25.797Z", "endDate"=>"2019-06-27T19:38:25.797Z", "destination"=>"Algeria", "trip"=>{"title"=>"eeee", "startDate"=>"2019-06-27T19:38:25.797Z", "endDate"=>"2019-06-27T19:38:25.797Z", "destination"=>"Algeria"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 11ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:41:22 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:41:27 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"sss", "startDate"=>"2019-06-27T19:41:21.987Z", "endDate"=>"2019-06-27T19:41:21.987Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:42:01 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:42:22 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"kjhjkhkj", "startDate"=>"2019-06-27T19:42:01.761Z", "endDate"=>"2019-06-27T19:42:01.761Z", "destination"=>"Albania"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:43:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:43:53 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:45:04 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"ddd", "startDate"=>"2019-06-27T19:43:53.407Z", "endDate"=>"2019-06-27T19:43:53.407Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 11ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:45:23 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:45:47 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:45:52 -0400
+Processing by TripsController#create as */*
+  Parameters: {"name"=>"ali", "trip"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 400 Bad Request in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: trip):
+  
+app/controllers/trips_controller.rb:18:in `trips_params'
+app/controllers/trips_controller.rb:11:in `create'
+Started GET "/profile" for ::1 at 2019-06-27 15:46:06 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:47:05 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"ddd", "startDate"=>"2019-06-27T19:46:06.675Z", "endDate"=>"2019-06-27T19:46:06.675Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ (byebug):1
+Completed 500 Internal Server Error in 321884ms (ActiveRecord: 9.2ms)
+
+
+  
+Started POST "/new_trip" for ::1 at 2019-06-27 15:52:27 -0400
+SystemExit (exit):
+Started GET "/trips" for ::1 at 2019-06-27 15:52:27 -0400
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trips_controller.rb:11:in `create'
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"ddd", "startDate"=>"2019-06-27T19:46:06.675Z", "endDate"=>"2019-06-27T19:46:06.675Z", "destination"=>"Åland Islands"}}
+Processing by TripsController#index as */*
+  [1m[36mUser Load (24.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mUser Load (4009.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mTrip Load (10.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 500 Internal Server Error in 30435ms (ActiveRecord: 25.6ms)
+
+
+  ↳ app/controllers/trips_controller.rb:5
+  
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+SystemExit (exit):
+  ↳ app/controllers/application_controller.rb:26
+  
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/trips_controller.rb:11:in `create'
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 31042ms (Views: 14.4ms | ActiveRecord: 4029.8ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:53:17 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"going to miami w ali", "startDate"=>"2019-06-27T19:53:08.404Z", "endDate"=>"2019-06-27T19:53:08.404Z", "destination"=>"Åland Islands"}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Unpermitted parameter: :trip
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 264ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:54:54 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 289ms (Views: 19.1ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:55:05 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 46ms (Views: 11.5ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 15:55:11 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"sdfsdf", "startDate"=>"2019-06-27T19:55:05.867Z", "endDate"=>"2019-06-27T19:55:05.867Z", "destination"=>"Albania", "user_id"=>2}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mTrip Create (0.7ms)[0m  [1m[32mINSERT INTO "trips" ("title", "startDate", "endDate", "destination", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "sdfsdf"], ["startDate", "2019-06-27"], ["endDate", "2019-06-27"], ["destination", "Albania"], ["user_id", 2], ["created_at", "2019-06-27 19:55:15.815992"], ["updated_at", "2019-06-27 19:55:15.815992"]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 3817ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:56:57 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 15:58:41 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:01:51 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:08:19 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:08:52 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:10:18 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:11:09 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-27 16:13:12 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-27 16:13:56 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:22:in `decoded_token'
+app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:30:in `logged_in?'
+app/controllers/application_controller.rb:34:in `authorized'
+Started POST "/login" for ::1 at 2019-06-27 16:14:44 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:22:in `decoded_token'
+app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:30:in `logged_in?'
+app/controllers/application_controller.rb:34:in `authorized'
+Started POST "/login" for ::1 at 2019-06-27 16:15:52 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ArgumentError (Before process_action callback :authorized has not been defined):
+  
+app/controllers/auth_controller.rb:2:in `<class:AuthController>'
+app/controllers/auth_controller.rb:1:in `<main>'
+Started POST "/login" for ::1 at 2019-06-27 16:16:36 -0400
+  
+ArgumentError (Before process_action callback :authorized has not been defined):
+  
+app/controllers/auth_controller.rb:2:in `<class:AuthController>'
+app/controllers/auth_controller.rb:1:in `<main>'
+Started POST "/login" for ::1 at 2019-06-27 16:18:04 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "auth"=>{"username"=>"al", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 200 OK in 209ms (Views: 0.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:18:05 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:18:46 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:19:34 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:22:23 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:28:31 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:28:43 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:28:47 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:29:08 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:29:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:29:36 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:30:06 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:30:37 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (21.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:30:43 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:32:26 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 16:32:26 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 44ms (Views: 0.8ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 16:32:42 -0400
+Started GET "/profile" for ::1 at 2019-06-27 16:32:42 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 1.3ms)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 16:32:57 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"test", "startDate"=>"2019-06-27T20:32:46.981Z", "endDate"=>"2019-06-30T20:32:46.000Z", "destination"=>"Belarus"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 16:33:01 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 16:34:11 -0400
+Processing by TripsController#index as */*
+Started GET "/profile" for ::1 at 2019-06-27 16:34:11 -0400
+  [1m[36mTrip Load (0.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 16:36:23 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"", "startDate"=>"2019-06-27T20:34:16.005Z", "endDate"=>"2019-06-27T20:34:16.005Z", "destination"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:36:24 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:36:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:37:48 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:38:01 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:38:39 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:39:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:39:52 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:40:04 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:40:51 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 16:43:27 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:03:47 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:04:14 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:04:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:05:21 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:06:39 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:06:45 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:07:09 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:07:18 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:08:20 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:09:55 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 17:10:13 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"test123", "startDate"=>"2019-06-27T21:09:55.133Z", "endDate"=>"2019-07-05T21:09:55.000Z", "destination"=>"Algeria", "user_id"=>2}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mTrip Create (0.6ms)[0m  [1m[32mINSERT INTO "trips" ("title", "startDate", "endDate", "destination", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test123"], ["startDate", "2019-06-27"], ["endDate", "2019-07-05"], ["destination", "Algeria"], ["user_id", 2], ["created_at", "2019-06-27 21:10:13.475562"], ["updated_at", "2019-06-27 21:10:13.475562"]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:10:51 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:10:56 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 17:11:52 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"", "startDate"=>"2019-06-27T21:10:56.841Z", "endDate"=>"2019-06-27T21:10:56.841Z", "destination"=>"", "user_id"=>2}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mTrip Create (0.3ms)[0m  [1m[32mINSERT INTO "trips" ("title", "startDate", "endDate", "destination", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["startDate", "2019-06-27"], ["endDate", "2019-06-27"], ["destination", ""], ["user_id", 2], ["created_at", "2019-06-27 21:11:52.177059"], ["updated_at", "2019-06-27 21:11:52.177059"]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:11:53 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:12:23 -0400
+Started GET "/profile" for ::1 at 2019-06-27 17:12:23 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:12:29 -0400
+Processing by TripsController#index as */*
+Started GET "/profile" for ::1 at 2019-06-27 17:12:29 -0400
+Processing by UsersController#profile as */*
+  [1m[36mTrip Load (2.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/new_trip" for ::1 at 2019-06-27 17:13:08 -0400
+Processing by TripsController#create as */*
+  Parameters: {"trip"=>{"title"=>"Spring break", "startDate"=>"2019-06-27T21:12:55.584Z", "endDate"=>"2019-07-10T21:12:55.000Z", "destination"=>"American Samoa", "user_id"=>2}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[36mTrip Create (0.5ms)[0m  [1m[32mINSERT INTO "trips" ("title", "startDate", "endDate", "destination", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Spring break"], ["startDate", "2019-06-27"], ["endDate", "2019-07-10"], ["destination", "American Samoa"], ["user_id", 2], ["created_at", "2019-06-27 21:13:08.857081"], ["updated_at", "2019-06-27 21:13:08.857081"]]
+  ↳ app/controllers/trips_controller.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/trips_controller.rb:11
+Completed 204 No Content in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:13:57 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/profile" for ::1 at 2019-06-27 17:13:57 -0400
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:14:18 -0400
+Started GET "/profile" for ::1 at 2019-06-27 17:14:18 -0400
+Processing by TripsController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mTrip Load (0.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 14ms (Views: 1.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:14:21 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (3.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 10ms (Views: 1.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/trips" for ::1 at 2019-06-27 17:14:24 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:26
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrip Load (0.7ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = $1[0m  [["user_id", 2]]

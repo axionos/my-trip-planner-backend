@@ -7,14 +7,14 @@ class TripsController < ApplicationController
   end
 
   def create
-    byebug
-    trip = Trip.create(trips_param)
+    # byebug
+    trip = Trip.create(trips_params)
   end
 
 
   private
 
-  def trips_param
-    param.permit(:title, :startDate, :endDate, :destination)
+  def trips_params
+    params.require(:trip).permit(:title, :startDate, :endDate, :destination, :user_id)
   end
 end
