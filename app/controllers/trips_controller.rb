@@ -9,6 +9,7 @@ class TripsController < ApplicationController
   def create
     # byebug
     trip = Trip.create(trips_params)
+    render json: trip
   end
 
 
