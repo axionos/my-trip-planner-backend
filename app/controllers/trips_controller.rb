@@ -7,9 +7,20 @@ class TripsController < ApplicationController
   end
 
   def create
-    # byebug
     trip = Trip.create(trips_params)
     render json: trip
+  end
+
+  def update
+    # byebug
+    theTrip = Trip.find(params[:id])
+    updatedTrip = theTrip.update(trips_params)
+    render json: updatedTrip
+  end
+
+  def destroy
+    theTrip = Trip.find(params[:id])
+    theTrip.destroy
   end
 
 
