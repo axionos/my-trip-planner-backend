@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 
   # before_action :authorized
-  
+
 
   def user_payload(user)
     { user_id: user.id }
@@ -13,6 +13,7 @@ class ApplicationController < ActionController::API
 
   def token
     request.headers["Authorization"]
+    # byebug
   end
 
   def secret
@@ -23,12 +24,12 @@ class ApplicationController < ActionController::API
     JWT.decode token, secret, true, { algorithm: 'HS256' }
   end
 
-  def current_user
+  def session_user
     user = User.find(decoded_token[0]["user_id"])
   end
 
   # def logged_in?
-  #   !!current_user
+  #   !!session_user
   # end
   #
   # def authorized

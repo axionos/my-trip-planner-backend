@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     is_valid = user.valid?
 
     # If the user is valid
+    # byebug
     if is_valid
       # create a token for them and send the token back to the frontend
       render json: { token: encode_token(user) }
@@ -19,7 +20,7 @@ class UsersController < ApplicationController
 def profile
   # byebug
 
-  render json: current_user
+  render json: session_user
 end
 
 

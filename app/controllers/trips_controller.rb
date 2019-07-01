@@ -1,8 +1,8 @@
 class TripsController < ApplicationController
   def index
-    # trips = @all.find_by(user_id: current_user.id)
+    # trips = @all.find_by(user_id: session_user.id)
     @all = Trip.all
-    trips = @all.find_all { |trip| trip.user_id == current_user.id }
+    trips = @all.find_all { |trip| trip.user_id == session_user.id }
     render json: trips
   end
 
@@ -26,7 +26,6 @@ class TripsController < ApplicationController
     end
 
     theDays = Day.all.find_all{ |day| day.trip_id == theTrip.id }
-    # byebug
 
     render json: { trip: trip, days: trip.days }
   end

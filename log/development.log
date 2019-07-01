@@ -704,7 +704,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 TypeError (no implicit conversion of nil into String):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 16:58:13 -0400
 Processing by UsersController#profile as */*
@@ -715,7 +715,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 TypeError (no implicit conversion of nil into String):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 16:58:29 -0400
 Processing by AuthController#login as */*
@@ -739,7 +739,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 16:59:34 -0400
 Processing by UsersController#profile as */*
@@ -750,7 +750,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 16:59:54 -0400
 Processing by AuthController#login as */*
@@ -802,7 +802,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:42:17 -0400
 Processing by UsersController#profile as */*
@@ -813,7 +813,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:42:39 -0400
 Processing by UsersController#profile as */*
@@ -824,7 +824,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:42:45 -0400
 Processing by UsersController#profile as */*
@@ -835,7 +835,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:43:13 -0400
 Processing by UsersController#profile as */*
@@ -846,7 +846,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:43:26 -0400
 Processing by UsersController#profile as */*
@@ -857,7 +857,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:43:34 -0400
 Processing by UsersController#profile as */*
@@ -868,7 +868,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:48:32 -0400
 Processing by UsersController#profile as */*
@@ -879,7 +879,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 17:50:35 -0400
 Processing by AuthController#login as */*
@@ -905,7 +905,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:51:05 -0400
 Processing by UsersController#profile as */*
@@ -916,7 +916,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:51:08 -0400
 Processing by UsersController#profile as */*
@@ -927,7 +927,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 17:53:25 -0400
 Processing by AuthController#login as */*
@@ -950,7 +950,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:54:09 -0400
 Processing by UsersController#profile as */*
@@ -961,7 +961,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 17:54:28 -0400
 Processing by AuthController#login as */*
@@ -980,7 +980,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:55:42 -0400
 Processing by UsersController#profile as */*
@@ -991,7 +991,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:55:51 -0400
 Processing by UsersController#profile as */*
@@ -1002,7 +1002,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:56:01 -0400
 Processing by UsersController#profile as */*
@@ -1013,7 +1013,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:56:08 -0400
 Processing by UsersController#profile as */*
@@ -1024,7 +1024,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:56:13 -0400
 Processing by UsersController#profile as */*
@@ -1035,7 +1035,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 17:57:10 -0400
 Processing by UsersController#profile as */*
@@ -1046,7 +1046,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:57:24 -0400
 Processing by UsersController#profile as */*
@@ -1057,7 +1057,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:57:35 -0400
 Processing by UsersController#profile as */*
@@ -1068,7 +1068,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:57:37 -0400
 Processing by UsersController#profile as */*
@@ -1079,7 +1079,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:58:16 -0400
 Processing by UsersController#profile as */*
@@ -1090,7 +1090,7 @@ Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:59:53 -0400
 Processing by UsersController#profile as */*
@@ -1101,7 +1101,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 21:59:55 -0400
 Processing by UsersController#profile as */*
@@ -1112,7 +1112,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:00:02 -0400
 Processing by UsersController#profile as */*
@@ -1123,7 +1123,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:02:10 -0400
 Processing by UsersController#profile as */*
@@ -1134,7 +1134,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:02:32 -0400
 Processing by UsersController#profile as */*
@@ -1145,7 +1145,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:03:19 -0400
 Processing by UsersController#profile as */*
@@ -1156,7 +1156,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:03:42 -0400
 Processing by UsersController#profile as */*
@@ -1167,7 +1167,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 22:04:21 -0400
 Processing by AuthController#login as */*
@@ -1200,7 +1200,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-24 22:05:20 -0400
 Processing by UsersController#profile as */*
@@ -1211,7 +1211,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-24 22:05:28 -0400
 Processing by AuthController#login as */*
@@ -1344,7 +1344,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 11:27:55 -0400
 Processing by UsersController#profile as */*
@@ -1355,7 +1355,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 11:28:05 -0400
 Processing by AuthController#login as */*
@@ -1704,7 +1704,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 11:47:36 -0400
 Processing by UsersController#profile as */*
@@ -1715,7 +1715,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 11:47:47 -0400
 Processing by UsersController#profile as */*
@@ -1726,7 +1726,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 11:55:08 -0400
 Processing by UsersController#profile as */*
@@ -1737,7 +1737,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 11:55:15 -0400
 Processing by UsersController#profile as */*
@@ -1748,7 +1748,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 11:55:34 -0400
 Processing by AuthController#login as */*
@@ -1977,7 +1977,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:30:53 -0400
 Processing by UsersController#profile as */*
@@ -1988,7 +1988,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:33:10 -0400
 Processing by UsersController#profile as */*
@@ -1999,7 +1999,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:34:47 -0400
 Processing by UsersController#profile as */*
@@ -2010,7 +2010,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:34:51 -0400
 Processing by UsersController#profile as */*
@@ -2021,7 +2021,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:34:52 -0400
 Processing by UsersController#profile as */*
@@ -2032,7 +2032,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 13:34:58 -0400
 Processing by UsersController#profile as */*
@@ -2043,7 +2043,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 13:36:13 -0400
 Processing by AuthController#login as */*
@@ -2193,7 +2193,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 13:50:08 -0400
 Processing by AuthController#login as */*
@@ -2715,7 +2715,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:20:37 -0400
 Processing by UsersController#profile as */*
@@ -2726,7 +2726,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:20:44 -0400
 Processing by UsersController#profile as */*
@@ -2737,7 +2737,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:20:48 -0400
 Processing by UsersController#profile as */*
@@ -2748,7 +2748,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:20:59 -0400
 Processing by UsersController#profile as */*
@@ -2759,7 +2759,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 14:22:54 -0400
 Processing by AuthController#login as */*
@@ -2792,7 +2792,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:23:02 -0400
 Processing by UsersController#profile as */*
@@ -2803,7 +2803,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:23:07 -0400
 Processing by UsersController#profile as */*
@@ -2814,7 +2814,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:23:14 -0400
 Processing by UsersController#profile as */*
@@ -2825,7 +2825,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 14:35:24 -0400
 Processing by AuthController#login as */*
@@ -2858,7 +2858,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:40:06 -0400
 Processing by UsersController#profile as */*
@@ -2869,7 +2869,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 14:47:28 -0400
 Processing by UsersController#profile as */*
@@ -2880,7 +2880,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/signup" for ::1 at 2019-06-25 14:47:34 -0400
 Processing by UsersController#create as */*
@@ -2925,7 +2925,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/signup" for ::1 at 2019-06-25 15:02:45 -0400
 Processing by UsersController#create as */*
@@ -2970,7 +2970,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
 Started POST "/login" for ::1 at 2019-06-25 15:12:11 -0400
@@ -3032,7 +3032,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:34:19 -0400
 Processing by AuthController#login as */*
@@ -3065,7 +3065,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:34:31 -0400
 Processing by UsersController#profile as */*
@@ -3076,7 +3076,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:34:33 -0400
 Processing by UsersController#profile as */*
@@ -3087,7 +3087,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:34:33 -0400
 Processing by UsersController#profile as */*
@@ -3098,7 +3098,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:34:37 -0400
 Processing by UsersController#profile as */*
@@ -3109,7 +3109,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:36:19 -0400
 Processing by AuthController#login as */*
@@ -3142,7 +3142,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:37:28 -0400
 Processing by AuthController#login as */*
@@ -3231,7 +3231,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:38:06 -0400
 Processing by AuthController#login as */*
@@ -3264,7 +3264,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:38:28 -0400
 Processing by AuthController#login as */*
@@ -3297,7 +3297,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:41:23 -0400
 Processing by UsersController#profile as */*
@@ -3308,7 +3308,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 15:50:38 -0400
 Processing by UsersController#profile as */*
@@ -3319,7 +3319,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 15:50:43 -0400
 Processing by AuthController#login as */*
@@ -3352,7 +3352,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 17:23:20 -0400
 Processing by AuthController#login as */*
@@ -3385,7 +3385,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-25 17:23:28 -0400
 Processing by UsersController#profile as */*
@@ -3396,7 +3396,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 17:23:59 -0400
 Processing by AuthController#login as */*
@@ -3548,7 +3548,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 17:33:28 -0400
 Processing by AuthController#login as */*
@@ -4353,7 +4353,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-25 22:06:30 -0400
 Processing by AuthController#login as */*
@@ -5758,7 +5758,7 @@ Completed 404 Not Found in 21ms (ActiveRecord: 12.0ms)
   
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
   
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-26 11:06:45 -0400
 Processing by UsersController#profile as */*
@@ -5770,7 +5770,7 @@ Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
   
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=5):
   
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started GET "/profile" for ::1 at 2019-06-26 11:06:56 -0400
 Processing by UsersController#profile as */*
@@ -5781,7 +5781,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-26 11:07:00 -0400
 Processing by AuthController#login as */*
@@ -5864,7 +5864,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/login" for ::1 at 2019-06-26 11:08:18 -0400
 Processing by AuthController#login as */*
@@ -5897,7 +5897,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
 Started POST "/signup" for ::1 at 2019-06-26 11:13:00 -0400
@@ -5947,7 +5947,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:21:in `profile'
 Started POST "/signup" for ::1 at 2019-06-26 11:13:43 -0400
 Processing by UsersController#create as */*
@@ -6205,7 +6205,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:22:in `profile'
 Started POST "/signup" for ::1 at 2019-06-26 11:21:14 -0400
 Processing by UsersController#create as */*
@@ -6274,7 +6274,7 @@ Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:22:in `profile'
 Started POST "/signup" for ::1 at 2019-06-26 11:21:52 -0400
 Processing by UsersController#create as */*
@@ -6327,7 +6327,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/users_controller.rb:22:in `profile'
 Started POST "/login" for ::1 at 2019-06-26 11:30:24 -0400
 Processing by AuthController#login as */*
@@ -11055,7 +11055,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11355,7 +11355,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11396,7 +11396,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11454,7 +11454,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11636,7 +11636,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11701,7 +11701,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.1ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -11755,7 +11755,7 @@ Completed 500 Internal Server Error in 36ms (ActiveRecord: 16.9ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -14127,7 +14127,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
 JWT::DecodeError (Nil JSON web token):
   
 app/controllers/application_controller.rb:20:in `decoded_token'
-app/controllers/application_controller.rb:24:in `current_user'
+app/controllers/application_controller.rb:24:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -15202,7 +15202,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 1.7ms)
 JWT::DecodeError (Not enough or too many segments):
   
 app/controllers/application_controller.rb:22:in `decoded_token'
-app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:26:in `session_user'
 app/controllers/application_controller.rb:30:in `logged_in?'
 app/controllers/application_controller.rb:34:in `authorized'
 Started GET "/profile" for ::1 at 2019-06-27 15:38:25 -0400
@@ -15512,7 +15512,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Nil JSON web token):
   
 app/controllers/application_controller.rb:22:in `decoded_token'
-app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:26:in `session_user'
 app/controllers/application_controller.rb:30:in `logged_in?'
 app/controllers/application_controller.rb:34:in `authorized'
 Started POST "/login" for ::1 at 2019-06-27 16:14:44 -0400
@@ -15525,7 +15525,7 @@ Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
 JWT::DecodeError (Nil JSON web token):
   
 app/controllers/application_controller.rb:22:in `decoded_token'
-app/controllers/application_controller.rb:26:in `current_user'
+app/controllers/application_controller.rb:26:in `session_user'
 app/controllers/application_controller.rb:30:in `logged_in?'
 app/controllers/application_controller.rb:34:in `authorized'
 Started POST "/login" for ::1 at 2019-06-27 16:15:52 -0400
@@ -22332,7 +22332,7 @@ Completed 200 OK in 133ms (Views: 8.2ms | ActiveRecord: 45.2ms)
   
 Started POST "/login" for ::1 at 2019-06-28 10:20:52 -0400
 app/controllers/application_controller.rb:23:in `decoded_token'
-app/controllers/application_controller.rb:27:in `current_user'
+app/controllers/application_controller.rb:27:in `session_user'
 app/controllers/trips_controller.rb:5:in `block in index'
 app/controllers/trips_controller.rb:5:in `find_all'
 app/controllers/trips_controller.rb:5:in `index'
@@ -48591,5 +48591,583 @@ Processing by TripsController#create as JSON
   [1m[36mDay Load (0.7ms)[0m  [1m[34mSELECT "days".* FROM "days" WHERE "days"."trip_id" = $1[0m  [["trip_id", 104]]
   ↳ app/controllers/trips_controller.rb:31
 Completed 200 OK in 440ms (Views: 32.9ms | ActiveRecord: 19.4ms)
+
+
+Started POST "/login" for ::1 at 2019-07-01 13:59:53 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>true, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>true}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 5.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:23:in `decoded_token'
+app/controllers/application_controller.rb:27:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:00:00 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"al"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/login" for ::1 at 2019-07-01 14:00:04 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 0.3ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:23:in `decoded_token'
+app/controllers/application_controller.rb:27:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/login" for ::1 at 2019-07-01 14:05:01 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>true, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>true}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:23:in `decoded_token'
+app/controllers/application_controller.rb:27:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/login" for ::1 at 2019-07-01 14:05:02 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>true, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>true}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.3ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:23:in `decoded_token'
+app/controllers/application_controller.rb:27:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/login" for ::1 at 2019-07-01 14:05:28 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>true, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>true}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 251293ms (ActiveRecord: 4.8ms)
+
+
+Started POST "/signup" for ::1 at 2019-07-01 14:09:39 -0400
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"al"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 2.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/login" for ::1 at 2019-07-01 14:10:05 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 8.2ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:10:10 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"al"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (215.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (207.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "organizer-back-end_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (401.3ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (279.2ms)[0m  [1m[35mCREATE DATABASE "organizer-back-end_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2322694216991824725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190624153253)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190624153253_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190624153253"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateDays (20190626140522)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "days" ("id" bigserial primary key, "trip_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190626140522_create_days.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626140522"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20190626141206)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "place" character varying, "memo" character varying, "day_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190626141206_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626141206"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTrips (20190626192305)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "title" character varying, "startDate" date, "endDate" date, "destination" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190626192305_create_trips.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190626192305"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-01 18:11:23.258936"], ["updated_at", "2019-07-01 18:11:23.258936"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2322694216991824725)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 AND "users"."password_digest" = $2 LIMIT $3[0m  [["username", "tim"], ["password_digest", "tim"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "tim"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "tim"], ["password_digest", "tim"], ["created_at", "2019-07-01 18:11:31.112382"], ["updated_at", "2019-07-01 18:11:31.112382"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."title" = $1 AND "trips"."startDate" = $2 AND "trips"."endDate" = $3 AND "trips"."destination" = $4 AND "trips"."user_id" = $5 LIMIT $6[0m  [["title", "Summer Vacation"], ["startDate", "2019-08-10"], ["endDate", "2019-08-20"], ["destination", "France"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."title" = $1 AND "trips"."startDate" = $2 AND "trips"."endDate" = $3 AND "trips"."destination" = $4 AND "trips"."user_id" = $5 LIMIT $6[0m  [["title", "Winter Vacation"], ["startDate", "2019-12-10"], ["endDate", "2019-12-20"], ["destination", "Japan"], ["user_id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."place" = $1 AND "items"."memo" = $2 AND "items"."day_id" = $3 LIMIT $4[0m  [["place", "Eiffel Tower"], ["memo", "it is a famous landmark of the city"], ["day_id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mDay Load (0.4ms)[0m  [1m[34mSELECT  "days".* FROM "days" WHERE "days"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:26
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."place" = $1 AND "items"."memo" = $2 AND "items"."day_id" = $3 LIMIT $4[0m  [["place", "Louvre Museum"], ["memo", "it is a famous museum of the city"], ["day_id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT  "days".* FROM "days" WHERE "days"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:27
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."place" = $1 AND "items"."memo" = $2 AND "items"."day_id" = $3 LIMIT $4[0m  [["place", "Champs-Élysées"], ["memo", "it is a famous shopping street of the city"], ["day_id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mDay Load (0.2ms)[0m  [1m[34mSELECT  "days".* FROM "days" WHERE "days"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:28
+Started POST "/signup" for ::1 at 2019-07-01 14:12:07 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/soyeongoh/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"al"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "al"], ["password_digest", "$2a$12$2ZxI9DUnT7ktLUvnhsJIr.dLRWXOe.K7temmz9T9SLGbGop/19Y2q"], ["created_at", "2019-07-01 18:12:07.532177"], ["updated_at", "2019-07-01 18:12:07.532177"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "al"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 7.1ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/login" for ::1 at 2019-07-01 14:13:53 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:13:58 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"al"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 0.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/trips" for ::1 at 2019-07-01 14:13:59 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 4.0ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/trips_controller.rb:6:in `index'
+Started POST "/login" for ::1 at 2019-07-01 14:14:02 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/login" for ::1 at 2019-07-01 14:14:17 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"hello", "password"=>"[FILTERED]", "error"=>true, "auth"=>{"username"=>"hello", "password"=>"[FILTERED]", "error"=>true}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "hello"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/auth_controller.rb:11:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:14:30 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"test"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test"], ["password_digest", "$2a$12$t8p14hSsfgyPD98NT9E5cOUwuKGgmZ2ruAmoI8tjMnnYyMAv7pqwm"], ["created_at", "2019-07-01 18:14:30.745816"], ["updated_at", "2019-07-01 18:14:30.745816"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 1.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/users_controller.rb:12:in `create'
+Started GET "/trips" for ::1 at 2019-07-01 14:15:46 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.6ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/trips_controller.rb:6:in `index'
+Started POST "/login" for ::1 at 2019-07-01 14:15:54 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"test", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 5.2ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:15:59 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"oo", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"oo"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "oo"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "oo"], ["password_digest", "$2a$12$tKsL.sRI.akey8hFUYmmje9gYrPVwEbj8IFTEfGw7vB/vQlavdcVq"], ["created_at", "2019-07-01 18:15:59.367769"], ["updated_at", "2019-07-01 18:15:59.367769"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "oo"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "oo"], ["id", 4], ["LIMIT", 1]]
+  ↳ (byebug):1
+Completed 500 Internal Server Error in 49317ms (ActiveRecord: 1.5ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/trips" for ::1 at 2019-07-01 14:17:03 -0400
+Processing by TripsController#index as */*
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/trips_controller.rb:6:in `index'
+Started POST "/login" for ::1 at 2019-07-01 14:18:44 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"al", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"al", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "al"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.4ms)
+
+
+  
+JWT::DecodeError (Nil JSON web token):
+  
+app/controllers/application_controller.rb:24:in `decoded_token'
+app/controllers/application_controller.rb:28:in `session_user'
+app/controllers/auth_controller.rb:15:in `login'
+Started POST "/signup" for ::1 at 2019-07-01 14:23:28 -0400
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test2", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"test2"}}
+Unpermitted parameters: :error, :user
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test2"], ["password_digest", "$2a$12$bv7qJM6m2uQScmFiLruS9.a2oVzEZrAjWIKlVQ9xm8Dl/T3nahKCq"], ["created_at", "2019-07-01 18:23:28.463337"], ["updated_at", "2019-07-01 18:23:28.463337"]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "test2"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7
+Completed 500 Internal Server Error in 20740ms (ActiveRecord: 6.0ms)
+
+
+  
+Started POST "/signup" for ::1 at 2019-07-01 14:23:49 -0400
+SystemExit (exit):
+Started POST "/signup" for ::1 at 2019-07-01 14:23:49 -0400
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:11:in `create'
+Processing by UsersController#create as */*
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"test2", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"test2"}}
+  Parameters: {"username"=>"test2", "password"=>"[FILTERED]", "error"=>false, "user"=>{"username"=>"test2"}}
+Unpermitted parameters: :error, :user
+Unpermitted parameters: :error, :user
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (208.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:5
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (14.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  [1m[35m (5.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Exists (28.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5
+  ↳ app/controllers/users_controller.rb:5
+  [1m[36mUser Exists (4.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:7
+  ↳ app/controllers/users_controller.rb:5
+Completed 500 Internal Server Error in 9996ms (ActiveRecord: 24.7ms)
+
+
+  [1m[36mUser Exists (30.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  
+  ↳ app/controllers/users_controller.rb:7
+SystemExit (exit):
+  
+Completed 500 Internal Server Error in 11481ms (ActiveRecord: 268.8ms)
+
+
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:11:in `create'
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/login" for ::1 at 2019-07-01 14:24:15 -0400
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"test2", "password"=>"[FILTERED]", "error"=>false, "auth"=>{"username"=>"test2", "password"=>"[FILTERED]", "error"=>false}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test2"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:8
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.54ms)
+Completed 200 OK in 395ms (Views: 43.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/trips" for ::1 at 2019-07-01 14:24:16 -0400
+Processing by TripsController#index as */*
+Started GET "/profile" for ::1 at 2019-07-01 14:24:16 -0400
+  [1m[36mTrip Load (16.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/trips_controller.rb:5
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (7.65ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.82ms)
+Completed 200 OK in 170ms (Views: 90.3ms | ActiveRecord: 16.3ms)
+
+
+Completed 200 OK in 305ms (Views: 176.4ms | ActiveRecord: 41.4ms)
 
 
