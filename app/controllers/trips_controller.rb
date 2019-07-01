@@ -26,12 +26,10 @@ class TripsController < ApplicationController
     end
 
     theDays = Day.all.find_all{ |day| day.trip_id == theTrip.id }
-
     render json: { trip: trip, days: trip.days }
   end
 
   def update
-    # byebug
     theTrip = Trip.find(params[:id])
     updatedTrip = theTrip.update(trips_params)
     render json: updatedTrip
@@ -39,15 +37,11 @@ class TripsController < ApplicationController
 
   def destroy
     theTrip = Trip.find(params[:id])
+    theDays = Day.all.find_all{|day| day.trip_id == theTrip.id}
+    theDays.each{|day| day.delete}
     theTrip.destroy
   end
 
-  # def create_day
-  #   # user = User.find(params[:user_id])
-  #   startDate = Date.parse(params[:startDate])
-  #   endDate = Date.parse(params[:endDate])
-  #   byebug
-  # end
 
   private
 
