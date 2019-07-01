@@ -16,7 +16,7 @@ class TripsController < ApplicationController
 
     # find the trip_id for the new trip
     title = params[:trip][:title]
-    theTrip = Trip.all.find{|trip| trip.title == title}
+    theTrip = Trip.all.find{ |trip| trip.title == title }
 
     # create number of DAYs for that trip
     x = 1
@@ -25,8 +25,10 @@ class TripsController < ApplicationController
       x += 1
     end
 
+    theDays = Day.all.find_all{ |day| day.trip_id == theTrip.id }
+    # byebug
 
-    render json: trip 
+    render json: { trip: trip, days: trip.days }
   end
 
   def update

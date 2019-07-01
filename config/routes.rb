@@ -10,6 +10,4 @@ Rails.application.routes.draw do
   patch '/trips/:id', to: "trips#update"
   delete '/trips/:id', to: "trips#destroy"
 
-  # DAY
-  post '/new_day', to: "trips#create_day"
 end
