@@ -8,7 +8,25 @@ class TripsController < ApplicationController
 
   def create
     trip = Trip.create(trips_params)
-    render json: trip
+
+    # calculate number of days in between two dates
+    startDate = Date.parse(params[:trip][:startDate])
+    endDate = Date.parse(params[:trip][:endDate])
+    days = endDate.mjd - startDate.mjd + 1
+
+    # find the trip_id for the new trip
+    title = params[:trip][:title]
+    theTrip = Trip.all.find{|trip| trip.title == title}
+
+    # create number of DAYs for that trip
+    x = 1
+    while x <= days
+      Day.create(trip_id: theTrip.id)
+      x += 1
+    end
+
+
+    render json: trip 
   end
 
   def update
@@ -23,6 +41,12 @@ class TripsController < ApplicationController
     theTrip.destroy
   end
 
+  # def create_day
+  #   # user = User.find(params[:user_id])
+  #   startDate = Date.parse(params[:startDate])
+  #   endDate = Date.parse(params[:endDate])
+  #   byebug
+  # end
 
   private
 

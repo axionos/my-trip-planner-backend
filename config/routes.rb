@@ -4,8 +4,12 @@ Rails.application.routes.draw do
   post '/signup', to: "users#create"
   get '/profile', to: "users#profile"
 
+  # TRIP
   get '/trips', to: "trips#index"
   post '/new_trip', to: "trips#create"
   patch '/trips/:id', to: "trips#update"
   delete '/trips/:id', to: "trips#destroy"
+
+  # DAY
+  post '/new_day', to: "trips#create_day"
 end
