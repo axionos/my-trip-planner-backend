@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_06_26_192305) do
 
   create_table "days", force: :cascade do |t|
     t.integer "trip_id"
+    t.string "day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

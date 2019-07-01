@@ -10,4 +10,10 @@ Rails.application.routes.draw do
   patch '/trips/:id', to: "trips#update"
   delete '/trips/:id', to: "trips#destroy"
 
+  # Day
+  get '/days/:id', to: "days#index"
+
+  # Item
+  get '/items/:id', to: "items#index"
+
 end

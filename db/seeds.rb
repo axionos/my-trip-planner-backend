@@ -21,10 +21,12 @@
 # day2 = Day.create(trip_id: 1)
 # day3 = Day.create(trip_id: 1)
 #
-# # Item
-# #Item.all # Day.all # User.all.first.trips.first.days.first.items
-# tower = Item.find_or_create_by(place: "Eiffel Tower", memo: "it is a famous landmark of the city", day_id: 1)
-# museum = Item.find_or_create_by(place: "Louvre Museum", memo: "it is a famous museum of the city", day_id: 1)
-# shopping = Item.find_or_create_by(place: "Champs-Élysées", memo: "it is a famous shopping street of the city", day_id: 3)
+# Item
+#Item.all # Day.all # User.all.first.trips.first.days.first.items
+tower = Item.find_or_create_by(place: "Eiffel Tower", memo: "it is a famous landmark of the city", day_id: 8)
+museum = Item.find_or_create_by(place: "Louvre Museum", memo: "it is a famous museum of the city", day_id: 8)
+shopping = Item.find_or_create_by(place: "Champs-Élysées", memo: "it is a famous shopping street of the city", day_id: 9)
+sightseeing = Item.find_or_create_by(place: "Notre-Dame Cathedral", memo: "it is a famous building of the city", day_id: 10)
+shopping = Item.find_or_create_by(place: "Champs-Élysées", memo: "it is a famous shopping street of the city", day_id: 10)
 
 puts "Seeding Completed"

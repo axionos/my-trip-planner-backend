@@ -21,7 +21,7 @@ class TripsController < ApplicationController
     # create number of DAYs for that trip
     x = 1
     while x <= days
-      Day.create(trip_id: theTrip.id)
+      Day.create(trip_id: theTrip.id, day: x)
       x += 1
     end
 
@@ -41,6 +41,7 @@ class TripsController < ApplicationController
     theDays.each{|day| day.delete}
     theTrip.destroy
   end
+
 
 
   private
