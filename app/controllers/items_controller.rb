@@ -7,4 +7,24 @@ class ItemsController < ApplicationController
     # byebug
     render json: items
   end
+
+  def create
+    # byebug
+    item = Item.create(items_param)
+    render json: item
+  end
+
+  def destroy
+    # byebug
+    item_id = params[:id]
+    item = Item.find(item_id)
+    item.destroy
+  end
+
+
+  private
+
+  def items_param
+    params.require(:item).permit(:place, :memo, :day_id)
+  end
 end

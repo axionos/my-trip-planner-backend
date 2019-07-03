@@ -15,5 +15,6 @@ Rails.application.routes.draw do
 
   # Item
   get '/items/:id', to: "items#index"
-
+  post '/new_item', to: "items#create"
+  delete '/items/:id', to: "items#destroy"
 end
