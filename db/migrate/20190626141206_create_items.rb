@@ -4,6 +4,8 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :place
       t.string :memo
       t.integer :day_id
+      t.decimal :latitude
+      t.decimal :longitude
       # t.belongs_to :day, foreign_key: true
 
       t.timestamps
