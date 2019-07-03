@@ -25,6 +25,6 @@ class ItemsController < ApplicationController
   private
 
   def items_param
-    params.require(:item).permit(:place, :memo, :day_id)
+    params.require(:item).permit(:place, :memo, :day_id, :longitude, :latitude)
   end
 end
