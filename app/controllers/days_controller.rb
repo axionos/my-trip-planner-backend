@@ -9,8 +9,11 @@ class DaysController < ApplicationController
     items = days.map{ |day| day.items }
     # day_id = params[:id]
     # items = Day.find(day_id).items
-    # byebug
     flattened = items.flatten
-    render json: { days: days, items: flattened}
+
+    first_day_id = days[0].id
+    first_day_items = flattened.find_all{|item| item.day_id == first_day_id}
+    # byebug
+    render json: { days: days, items: first_day_items}
   end
 end
