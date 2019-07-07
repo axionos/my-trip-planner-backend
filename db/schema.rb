@@ -24,10 +24,13 @@ ActiveRecord::Schema.define(version: 2019_06_26_192305) do
 
   create_table "items", force: :cascade do |t|
     t.string "place"
-    t.string "memo"
     t.integer "day_id"
     t.decimal "latitude"
     t.decimal "longitude"
+    t.boolean "open_now"
+    t.decimal "rating"
+    t.string "photo"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
