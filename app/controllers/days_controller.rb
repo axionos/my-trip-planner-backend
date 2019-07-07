@@ -2,17 +2,15 @@ class DaysController < ApplicationController
   def index
     # byebug
     # Days
-    @all = Day.all
     trip_id = params[:id]
-    # days = @all.select{|day| day.trip_id == trip_id.to_i}
-    days = Trip.find(trip_id).days
-    # byebug
+    days = session_user.trips.find(trip_id).days
 
     # Items
     items = days.map{ |day| day.items }
     # day_id = params[:id]
     # items = Day.find(day_id).items
     # byebug
-    render json: { days: days, items: items}
+    flattened = items.flatten
+    render json: { days: days, items: flattened}
   end
 end
