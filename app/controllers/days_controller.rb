@@ -1,5 +1,5 @@
 class DaysController < ApplicationController
-  def index
+  def show
     # Days
     trip_id = params[:id]
     days = session_user.trips.find(trip_id).days

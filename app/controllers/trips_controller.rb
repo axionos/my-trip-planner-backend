@@ -1,8 +1,8 @@
 class TripsController < ApplicationController
   def index
-    # trips = @all.find_by(user_id: session_user.id)
     @all = Trip.all
-    trips = @all.find_all { |trip| trip.user_id == session_user.id }
+    trips = session_user.trips
+    # trips = @all.find_all { |trip| trip.user_id == session_user.id }
     render json: trips
   end
 
@@ -12,7 +12,8 @@ class TripsController < ApplicationController
     # calculate number of days in between two dates
     startDate = Date.parse(params[:trip][:startDate])
     endDate = Date.parse(params[:trip][:endDate])
-    days = endDate.mjd - startDate.mjd + 1
+    # byebug
+    days = endDate.mjd - startDate.mjd + 1 # 10
 
     # find the trip_id for the new trip
     title = params[:trip][:title]
@@ -21,6 +22,7 @@ class TripsController < ApplicationController
     # create number of DAYs for that trip
     x = 1
     while x <= days
+      # byebug
       Day.create(trip_id: theTrip.id, day: x)
       x += 1
     end
@@ -39,6 +41,7 @@ class TripsController < ApplicationController
     days = endDate.mjd - startDate.mjd + 1
 
     added_days = days - theTripDays.length
+    removed_days = theTripDays.length - days
 
     if theTripDays.length < days
       x = 1
@@ -46,18 +49,18 @@ class TripsController < ApplicationController
         Day.create(trip_id: theTrip.id, day: theTripDays.length + x)
         x += 1
       end
-
+    elsif theTripDays.length > days
+      arr = theTripDays.to_a.pop(removed_days)
+      day_ids = arr.each{ |day| day.destroy }
     end
 
-
-    # byebug
     render json: updatedTrip
   end
 
   def destroy
     theTrip = Trip.find(params[:id])
-    theDays = Day.all.find_all{|day| day.trip_id == theTrip.id}
-    theDays.each{|day| day.delete}
+    theDays = Day.all.find_all{ |day| day.trip_id == theTrip.id }
+    theDays.each{ |day| day.delete }
     theTrip.destroy
   end
 

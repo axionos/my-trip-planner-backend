@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   delete '/trips/:id', to: "trips#destroy"
 
   # Day
-  get '/days/:id', to: "days#index"
+  get '/days/:id', to: "days#show"
 
   # Item
   get '/items/:id', to: "items#index"

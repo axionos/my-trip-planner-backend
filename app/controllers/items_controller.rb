@@ -4,18 +4,15 @@ class ItemsController < ApplicationController
     @all = Item.all
     day_id = params[:id]
     items = Day.find(day_id).items
-    # byebug
     render json: items
   end
 
   def create
-    # byebug
     item = Item.create(items_param)
     render json: item
   end
 
   def destroy
-    # byebug
     item_id = params[:id]
     item = Item.find(item_id)
     item.destroy
