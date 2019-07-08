@@ -31,7 +31,26 @@ class TripsController < ApplicationController
 
   def update
     theTrip = Trip.find(params[:id])
+    theTripDays = theTrip.days # array of days
     updatedTrip = theTrip.update(trips_params)
+
+    startDate = Date.parse(params[:trip][:startDate])
+    endDate = Date.parse(params[:trip][:endDate])
+    days = endDate.mjd - startDate.mjd + 1
+
+    added_days = days - theTripDays.length
+
+    if theTripDays.length < days
+      x = 1
+      while x <= added_days
+        Day.create(trip_id: theTrip.id, day: theTripDays.length + x)
+        x += 1
+      end
+
+    end
+
+
+    # byebug
     render json: updatedTrip
   end
 
