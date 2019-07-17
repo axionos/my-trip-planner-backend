@@ -4,7 +4,7 @@ It was built with React, Ruby on Rails, Google Place and Google Maps API.
 ## My Trip Planner Front End
 
 Front end part of My Trip Planner can be found on this link: 
-https://github.com/axionos/my-trip-planner-backend
+https://github.com/axionos/my-trip-planner-frontend
 
 ## How to Use?
 
